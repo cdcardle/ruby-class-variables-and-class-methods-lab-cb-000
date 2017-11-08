@@ -20,6 +20,6 @@ class Song
   end
 
   def genres
-    @@genres    
+    @@genres
   end
 end
