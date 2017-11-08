@@ -22,4 +22,11 @@ class Song
   def self.genres
     @@genres.uniq
   end
+
+  def self.genre_count
+    genres = {}
+    @@genres.each {|genre| genres[genre] = 0}
+    @@genres.each {|genre| genres[genre] += 1}
+    return genres
+  end
 end
