@@ -29,5 +29,6 @@ class Song
     # @@genres.each {|genre| genres[genre] += 1}
     # genres
     @@genres.each {|genre| genre_count[genre] = @@genres.count(genre)}
+    genre_count
   end
 end
